@@ -27,8 +27,13 @@ public class calculator {
                 break;
             }
             case "*" : {
-                hasil = angkaPertama * angkaKedua;
-                System.out.println("Hasil : " + hasil);
+                if (angkaKedua == 0 || angkaPertama == 0){
+                    System.out.println("Error su");
+                }
+                else {
+                    hasil = angkaPertama * angkaKedua;
+                    System.out.println("Hasil : " + hasil);
+                }
                 break;
             }
             case ":" : {
